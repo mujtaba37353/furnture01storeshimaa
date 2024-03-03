@@ -1,0 +1,9 @@
+.completed:not(:last-child):after{
+    position: absolute;
+    bottom: -17px;
+    height: 16px;
+    width: 2px;
+    content: '';
+    z-index: 10;
+    background: #333;
+}

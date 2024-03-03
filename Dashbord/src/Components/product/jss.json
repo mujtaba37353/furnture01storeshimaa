@@ -1,0 +1,62 @@
+{
+  "qualities": [
+    {
+      "values": [
+        {
+          "key_en": "color",
+          "key_ar": "اللون",
+          "value_en": "red",
+          "value_ar": "أحمر",
+          "_id": "65b8e5d3b55ab60e5ca42a96"
+        },
+        {
+          "key_en": "size",
+          "key_ar": "المقاس",
+          "value_en": "s",
+          "value_ar": "أس",
+          "_id": "65b8e5d3b55ab60e5ca42a97"
+        },
+        {
+          "key_en": "country",
+          "key_ar": "الدولة",
+          "value_en": "egypt",
+          "value_ar": "مصر",
+          "_id": "65b8e5d3b55ab60e5ca42a97"
+        },
+        {
+          "key_en": "city",
+          "key_ar": "المدينة",
+          "value_en": "cairo",
+          "value_ar": "القاهرة",
+          "_id": "65b8e5d3b55ab60e5ca42a97"
+        }
+      ],
+      "quantity": 20,
+      "price": 20,
+      "image": [],
+      "_id": "65b8e5d3b55ab60e5ca42a95"
+    },
+    {
+      "values": [
+        {
+          "key_en": "color",
+          "key_ar": "اللون",
+          "value_en": "red",
+          "value_ar": "أحمر",
+          "_id": "65b8e5d3b55ab60e5ca42a99"
+        },
+        {
+          "key_en": "size",
+          "key_ar": "المقاس",
+          "value_en": "m",
+          "value_ar": "أم",
+          "_id": "65b8e5d3b55ab60e5ca42a9a"
+        }
+      ],
+      "quantity": 20,
+      "price": 20,
+      "image": [],
+      "_id": "65b8e5d3b55ab60e5ca42a98"
+    }
+  ]
+}

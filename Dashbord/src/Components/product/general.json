@@ -1,0 +1,21 @@
+{
+  "key_en": "color",
+  "key_ar": "اللون",
+  "values": [
+    {
+      "value_en": "red",
+      "value_ar": "أحمر",
+      "color": "#f50f0f"
+    },
+    {
+      "value_en": "blue",
+      "value_ar": "أزرق",
+      "color": "#1002d1"
+    },
+    {
+      "value_en": "green",
+      "value_ar": "أخضر",
+      "color": "#08a34b"
+    }
+  ]
+}
