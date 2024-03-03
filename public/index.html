@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="whiteLogo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Moyasar Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.moyasar.com/mpf/1.10.0/moyasar.css"
+    />
+    <title>Aldhubaibi Store</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Moyasar Scripts -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=fetch"></script>
+    <script src="https://cdn.moyasar.com/mpf/1.10.0/moyasar.js"></script>
+    <!-- <script type="text/javascript" src="/bundle.js"></script> -->
+
+    <!-- Tabby Scripts -->
+    <div id="tabby"></div>
+    <script src="https://checkout.tabby.ai/tabby-promo.js"></script>
+    <script>
+      new TabbyPromo({
+       selector: '#TabbyPromo', // required, content of tabby Promo Snippet will be placed in element with that selector.
+       currency: 'SAR', // required, currency of your product. AED|SAR|KWD|BHD|QAR only supported, with no spaces or lowercase.
+       price: '500.00', // required, price or the product. 2 decimals max for AED|SAR|QAR and 3 decimals max for KWD|BHD.
+       installmentsCount: 4, // Optional, for non-standard plans.
+       lang: window.localStorage.getItem('i18nextLng'), // Optional, language of snippet and popups, if the property is not set, then it is based on the attribute 'lang' of your html tag.
+       source: 'product', // Optional, snippet placement; `product` for product page and `cart` for cart page.
+       publicKey: 'pk_test_b7684c78-7362-4500-928d-aa995c57fdfc', // required, store Public Key which identifies your account when communicating with tabby.
+       merchantCode: 'Aldhubaibi'  // required
+     });
+    </script>
+        
+      
+    <!-- End of Tabby Scripts -->
+
+  </body>
+</html>

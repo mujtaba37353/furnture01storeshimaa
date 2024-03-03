@@ -1,0 +1,15 @@
+ {data?.data?.qualities?.map((quality) => (
+                  <Attrs
+                    key={quality._id}
+                    colors={{
+                      attrKeyColor: colors.attrKeyColor,
+                      attrValueColor: colors.attrValueColor,
+                      attrValueBgColor: colors.attrValueBgColor,
+                      attrValueBorderColor: colors.attrValueBorderColor,
+                      attrAciveColors: colors.attrAciveColors,
+                    }}
+                    attr={quality}
+                    setCartData={setCartData}
+                    cartData={cartData}
+                  />
+                ))}

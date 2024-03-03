@@ -1,0 +1,130 @@
+ {/* <Box
+        component={Swiper}
+        slidesPerView={7}
+        spaceBetween={1}
+        onSwiper={setThumbsSwiper}
+        sx={{
+          ...styles.SwipperBox.sx,
+          direction: props.lng === 'en' ? 'ltr' : 'rtl',
+          position: 'relative',
+        }}
+       
+        navigation={{
+          prevEl: navigationPrevRef?.current,
+          nextEl: navigationNextRef?.current,
+        }}
+        onBeforeInit={(swiper) => {
+          if (
+            swiper.params.navigation &&
+            typeof swiper.params.navigation !== 'boolean'
+          ) {
+            swiper.params.navigation.prevEl = navigationPrevRef?.current
+            swiper.params.navigation.nextEl = navigationNextRef?.current
+          }
+        }}
+        breakpoints={styles.SwipperBox.Breackpoints}
+      >
+        {navLinks.map((item, index) => {
+          return !item?.nestedLinks ? (
+            <SwiperSlide width="200px" key={index}>
+              <Button
+                component={NavLink}
+                key={index}
+                // id={`button${index}`}
+                // aria-controls={
+                //   activeButton === `button${index}` ? `menu${index}` : undefined
+                // }
+                aria-haspopup="true"
+                aria-expanded={
+                  activeButton === `button${index}` ? 'true' : undefined
+                }
+                to={item?.path}
+                sx={{ ...navLinksStyles.ButtonStyle }}
+                className="navbutton"
+                startIcon={
+                  constants.muiIcons.length > 0
+                    ? constants.muiIcons(lng)[index]
+                    : null
+                }
+              >
+                {lng === 'en' ? item.link_en : item.link_ar}
+              </Button>
+            </SwiperSlide>
+          ) : (
+            <>
+              {item.nestedLinks.length > 0 && (
+                <SwiperSlide key={index}>
+                  <Box>
+                    <Button
+                      component={NavLink}
+                      to={`/departments`}
+                      sx={{
+                        ...navCategoryMenuStyles.btnAll(pathname),
+                      }}
+                      className="navbutton"
+                      startIcon={
+                        constants.muiIcons.length > 0
+                          ? constants.muiIcons(lng)[index]
+                          : null
+                      }
+                    >
+                      {lng === 'en' ? 'All departments' : 'جميع الأقسام'}
+                    </Button>
+                  </Box>
+                </SwiperSlide>
+              )}
+              {item.nestedLinks.map((element, index) => {
+                return !element.subs[0] ? (
+                  <SwiperSlide key={index}>
+                    <Box>
+                      <Button
+                        component={NavLink}
+                        key={index}
+                        id={`button${index}`}
+                        aria-controls={
+                          activeButton === `button${index}`
+                            ? `menu${index}`
+                            : undefined
+                        }
+                        className="navbutton"
+                        aria-haspopup="true"
+                        aria-expanded={
+                          activeButton === `button${index}` ? 'true' : undefined
+                        }
+                        title={
+                          lng === 'en' ? element.title_en : element.title_ar
+                        }
+                        to={`/departments/${
+                          element.id
+                        }/${element.title_en.replace(/\s+/g, '-')}`}
+                        sx={{ ...navLinksStyles.ButtonStyle }}
+                      >
+                        {constants.muiIcons.length > 0
+                          ? constants.muiIcons(lng)[1]
+                          : undefined}
+                        {lng === 'en'
+                          ? element.title_en.length > 15
+                            ? element.title_en.slice(0, 8)
+                            : element.title_en
+                          : element.title_ar.length > 10
+                          ? element.title_ar.slice(0, 8)
+                          : element.title_ar}
+                      </Button>
+                    </Box>
+                  </SwiperSlide>
+                ) : (
+                  <SwiperSlide width="200px" key={index}>
+                    <Box>
+                      <NavCategoryMenu
+                        {...props}
+                        item={element}
+                        handleDrawerToggle={props.handleDrawerToggle}
+                      />
+                    </Box>
+                  </SwiperSlide>
+                )
+              })}
+            </>
+          )
+        })}
+      </Box> */}

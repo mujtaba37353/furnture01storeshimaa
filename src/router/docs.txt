@@ -1,0 +1,19 @@
+1. / -> homePage
+2. /departments  -> products page
+3. /departments/:id/:name -> single product page
+4. /departments/:categoryId/:name -> products by category page
+5. /departments/:categoryId/:subId/:name -> proucts by subCategory page
+6. /payment-order -> payment moyasar page
+7. /aboutUs -> about us page
+8. /cart -> cart page
+9. /savedProducts -> saved products page
+10. /policies/:policyType -> type of policy page
+11. /contactUs -> contact us page
+12. /profile -> profile page
+13. /checkOut -> checkout page
+14. /sign-in -> loginPage
+15. /register -> registerPage
+16. /forgetPassword -> forget password page
+17. /thankYou -> thank you page
+18. /auth/google/callback -> Google
+* -> page not found
