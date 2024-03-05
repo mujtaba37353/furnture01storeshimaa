@@ -1,0 +1,105 @@
+.wrapper-class {
+    padding: 1rem;
+    padding: 0;
+  }
+  
+  .editor-class {
+    /* background-color: #505050; */
+    padding: 1rem;
+    /* border: 1px solid red; */
+  }
+  
+  /* .toolbar-class-dark {
+    background-color: #575757 !important ;
+  }
+  .toolbar-class-light {
+    background-color: #fff !important ;
+  } */
+  .rdw-dropdownoption-default {
+    color: #333;
+    text-align: center;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rdw-dropdown-carettoopen {
+    position: inherit;
+    top: 0px;
+  }
+  .rdw-dropdownoption-default {
+    width: 100%;
+  }
+  .rdw-dropdown-selectedtext {
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    padding: 0 5px;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+  .rdw-dropdown-carettoclose {
+    position: static;
+    left: unset;
+    right: unset;
+  }
+  .rdw-dropdown-carettoopen {
+    position: inherit;
+  }
+  .rdw-dropdown-optionwrapper {
+    overflow-x: hidden;
+  }
+  .wrapper-class {
+    padding: 0;
+  }
+  
+  .rdw-editor-toolbar {
+    padding: 6px 5px 0;
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-bottom: 5px;
+    user-select: none;
+    position: sticky;
+    top: 60px;
+    z-index: 2;
+  }
+  
+  .wrapper-class-dark {
+    border: 1px solid #00d5c5 !important;
+  }
+  .wrapper-class-light {
+    border: 1px solid #e0e0e0 !important ;
+  }
+  
+  .wrapper-class-dark .rdw-editor-toolbar {
+    background: #505050 !important;
+    border: 1px solid #505050 !important ;
+  }
+  .wrapper-class-light .rdw-editor-toolbar {
+    background: #c0c0c0 !important;
+    border: 1px solid #c0c0c0 !important ;
+  }
+  
+  .wrapper-class-dark .rdw-dropdown-wrapper,
+  .wrapper-class-dark .rdw-option-wrapper,
+  .wrapper-class-dark .rdw-dropdown-selectedtext {
+    background-color: #505050 !important;
+    color: #fff !important;
+    border: 1px solid #00d5c5 !important;
+  }
+  .wrapper-class-dark .rdw-dropdown-selectedtext {
+    color: #000 !important;
+  }
+  
+  .wrapper-class-light .rdw-dropdown-wrapper,
+  .wrapper-class-light .rdw-option-wrapper,
+  .wrapper-class-light .rdw-dropdown-selectedtext {
+    background-color: #fff !important;
+    color: #575757 !important;
+    border: 1px solid #ddd !important;
+  }
+  

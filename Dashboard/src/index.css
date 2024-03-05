@@ -1,0 +1,94 @@
+* {
+  font-family: "Noto Kufi Arabic", sans-serif !important;
+}
+
+.date-gradient {
+  background: rgb(207, 249, 170);
+  background: linear-gradient(
+    90deg,
+    rgba(207, 249, 170, 1) 0%,
+    rgba(117, 219, 209, 1) 100%
+  );
+  padding: 0.5rem 1.5rem;
+  border: 0;
+  border-radius: 6px;
+}
+
+@media print {
+  * {
+    print-color-adjust: exact;
+  }
+}
+
+/* custom scroll */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #8ffcf5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00e3d2;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00b4a8;
+}
+
+.apexcharts-menu-item {
+  color: #fff !important;
+}
+
+.apexcharts-menu-item:hover {
+  background-color: #00b4a8 !important;
+}
+
+.apexcharts-menu {
+  background-color: #444 !important;
+  border: none;
+}
+
+.customscroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+.customscroll::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: "10px";
+}
+
+/* Handle */
+.customscroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(15deg, #00d5c5fc, black) !important;
+  border-radius: "10px";
+}
+.customscroll_2::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: "10px";
+}
+
+/* Handle on hover */
+.customscroll::-webkit-scrollbar-thumb:hover {
+  background: "linear-gradient(15deg, #00d5c5fc, black)";
+}
+
+.ql-editor_en {
+  text-align: left !important;
+}
+.ql-editor_ar {
+  text-align: right !important;
+}
+
+
+.payment{
+  width:49%;
+  margin:10px !important
+}
